@@ -104,3 +104,76 @@
   will-change: transform;
   animation: hearthBeat 1s linear infinite;
 }
+
+@keyframes RedPrint {
+  0% {
+    color:black;
+  }
+  100% {
+    color: tomato;
+  }
+}
+
+.icon-row .icon-row__icon:nth-child(3):hover{
+  animation: RedPrint 1s ease-in-out forwards;
+}
+.icon-row .icon-row__icon:first-child {
+  position: relative;
+}
+
+@keyframes QRcodescen {
+0%{
+  transform: none;
+  opacity: 0.4;
+  top:0px;
+}
+75%,100% {
+  top:30px;
+  opacity: 0.4;
+}
+}
+#QRcode-scen {
+  position: absolute;
+  background-color: tomato;
+  width: 37px;
+  height: 5px;
+  opacity: 0;
+  z-index: 10;
+}
+.icon-row__icon:first-child:hover #QRcode-scen{
+  animation: QRcodescen 1s ease-in-out;
+}
+@keyframes openmail {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes closemail {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+.icon-row__icon:nth-child(2) .fa-address-book,
+.icon-row__icon:last-child .fa-envelope{
+  position: relative;
+}
+.icon-row__icon:nth-child(2) .fa-book-open,
+.icon-row__icon:last-child .fa-envelope-open {
+  position: absolute;
+  opacity: 0;
+}
+.icon-row__icon:nth-child(2):hover .fa-address-book,
+.icon-row__icon:last-child:hover  .fa-envelope {
+  animation: closemail 1s ease-in-out forwards;
+}
+.icon-row__icon:nth-child(2):hover .fa-book-open,
+.icon-row__icon:last-child:hover  .fa-envelope-open {
+  animation: openmail 1s ease-in-out forwards;
+}

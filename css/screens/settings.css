@@ -6,6 +6,10 @@
   align-items: center;
   justify-content: space-between;
 }
+.settings__setting:last-child {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+  padding-bottom: 40px;
+}
 .settings__setting i {
   opacity: 0.8;
   margin-right: 20px;
@@ -13,4 +17,10 @@
 }
 .settings__setting-column:last-child {
   opacity: 0.5;
+}
+.second-list > .settings__setting:first-child {
+  margin-top:20px;
+}
+.second-list > .settings__setting:last-child {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
