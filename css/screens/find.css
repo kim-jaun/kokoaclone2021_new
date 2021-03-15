@@ -160,20 +160,20 @@
     opacity: 0;
   }
 }
-.icon-row__icon:nth-child(2) .fa-address-book,
-.icon-row__icon:last-child .fa-envelope{
+.animation-icon .icon-row__icon:nth-child(2) .fa-address-book,
+.animation-icon .icon-row__icon:last-child .fa-envelope{
   position: relative;
 }
-.icon-row__icon:nth-child(2) .fa-book-open,
-.icon-row__icon:last-child .fa-envelope-open {
+.animation-icon .icon-row__icon:nth-child(2) .fa-book-open,
+.animation-icon .icon-row__icon:last-child .fa-envelope-open {
   position: absolute;
   opacity: 0;
 }
-.icon-row__icon:nth-child(2):hover .fa-address-book,
-.icon-row__icon:last-child:hover  .fa-envelope {
+.animation-icon .icon-row__icon:nth-child(2):hover .fa-address-book,
+.animation-icon .icon-row__icon:last-child:hover  .fa-envelope {
   animation: closemail 1s ease-in-out forwards;
 }
-.icon-row__icon:nth-child(2):hover .fa-book-open,
-.icon-row__icon:last-child:hover  .fa-envelope-open {
+.animation-icon .icon-row__icon:nth-child(2):hover .fa-book-open,
+.animation-icon .icon-row__icon:last-child:hover  .fa-envelope-open {
   animation: openmail 1s ease-in-out forwards;
 }
